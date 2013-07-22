@@ -1,0 +1,82 @@
+body{
+	background-color: brown;
+}
+
+#container{
+	background: url('http://www.pptback.com/uploads/borders-frames-notepad-backgrounds-powerpoint.jpg');
+	border-radius: 10px;
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0 10px;
+}
+
+.title{
+	padding: 50px 0 0;
+	font-size: 60px;
+	border-radius: 5px;
+	font-family: cursive;
+	text-align: center;
+}
+
+.addItems{
+	padding-left: 20px;
+}
+
+#newItem{
+	height: 20px;
+	border-radius: 3px;
+	text-align: center;
+	margin-top: -10px;
+}
+.button{
+	display: inline-block;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+}
+
+#add{
+	background: url('http://mountainss.files.wordpress.com/2012/12/plus-sign.png?w=33') 0 0 no-repeat;
+}
+
+.checks{
+	position: absolute;
+	right: 5px;
+	bottom:0px;
+}
+
+.green{
+	background: url('GreenCheck.png');
+}
+
+.red{
+	background: url('RedCheck.png');
+}
+
+.delete{
+	background: url('Delete.png');
+	position: absolute;
+	right: 50px;
+	bottom:0px;
+}
+
+h2{
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.strike{
+	text-decoration: line-through;
+}	
+
+ol{
+	font-family: arial;
+	margin: 0 0 10px;
+}
+
+li{
+	position: relative;
+	height: 40px;
+	padding: 3px 0;
+}
