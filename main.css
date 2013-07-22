@@ -3,7 +3,7 @@ body{
 }
 
 #container{
-	background: url('http://www.pptback.com/uploads/borders-frames-notepad-backgrounds-powerpoint.jpg');
+	background: url('notepad.jpg');
 	border-radius: 10px;
 	width: 500px;
 	height: auto;
@@ -78,5 +78,7 @@ ol{
 li{
 	position: relative;
 	height: 40px;
-	padding: 3px 0;
+	margin: 3px 1px;
+	border: solid 2px brown;
+	border-radius: 5px;
 }

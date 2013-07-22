@@ -9,6 +9,10 @@ $(document).ready(function(){
 				add();
 			}
 		});
+
+		//make the list sortable
+		$('ol').sortable();
+		
 		//check-off an item
 		$("ol").on("click", ".checks", function(){
 			console.log('strike');
@@ -22,6 +26,8 @@ $(document).ready(function(){
 
 		});
 
+
+
 	//Sets the info in the text box to variable item.
 	function add(){
 		var item = $('#newItem').val();
@@ -33,29 +39,10 @@ $(document).ready(function(){
 		else{
 			var newListItem = '<li class="newItem"><h2><span>'+item+'</span></h2><input type="button" name="delete" class="button delete"><input type="button" name="check" class="button checks green"></li>'
 			$('ol').prepend(newListItem);
-			$('#newItem').val(" ").focus(); 
+			$('li:first-child').effect('slide');
+			$('#newItem').val("").focus(); 
 		}
 	}
-
-
-	/*function strike(){
-		console.log('strike');
-		$('.newItem span').toggleClass('strike');
-		$('.newItem input').toggleClass('green red');
-
-	}
-
-	function remove(){
-		console.log('remove');
-		var deleteItem = $('this').parent().parent();
-		$('deleteItem').remove();
-	}
-
-	function unstrike(){
-		console.log('unstrike');
-		$('.checkedItem span').toggleClass('strike');
-		$('.checkedItem input').toggleClass('red green');
-	}*/
 
 
 });
