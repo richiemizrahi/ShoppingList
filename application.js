@@ -31,8 +31,9 @@ $(document).ready(function(){
 	//Sets the info in the text box to variable item.
 	function add(){
 		var item = $('#newItem').val();
+		var blankRE =  /^[\s]*$/;
 		console.log(item);
-		if(item == '')
+		if(item == '' || blankRE.test(item))
 		{
 			alert('You didn\'t enter anything!');
 		}
